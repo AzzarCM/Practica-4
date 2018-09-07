@@ -1,0 +1,54 @@
+:root {
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vw);
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+ 
+}
+
+
+
+h1{
+    font-size: 0.75em;
+}
+
+.iconos{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+p{
+    font-family:'Roboto', sans-serif;
+    color: #7f888f;
+    
+}
+ul{
+    list-style: none;
+
+}
+.hr1{
+    background-color: #f56a6a;
+    height: 5px;
+    border: 0;
+}
+
+button{
+
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background-color: transparent;
+    border-color: #f56a6a solid;
+}
+.twocolumn{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+body{
+    margin-left: 3em;
+    margin-right: 3em;
+}
