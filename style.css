@@ -3,32 +3,40 @@
     font-size: calc(0.5em + 1vw);
 }
 
-*, 
-::before, 
+*,
+::before,
 ::after {
     box-sizing: inherit;
- 
+
+
 }
-
-
-
 h1{
     font-size: 0.75em;
+    font-family:'Roboto', sans-serif;
+    margin-bottom: 0;
+
+}
+h1 span{
+  color: #7f888f;
 }
 
 .iconos{
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: space-between;
+
 }
 p{
     font-family:'Roboto', sans-serif;
     color: #7f888f;
-    
+
 }
 ul{
     list-style: none;
 
+}
+ul>li
+{
+  display: inline;
 }
 .hr1{
     background-color: #f56a6a;
@@ -36,13 +44,20 @@ ul{
     border: 0;
 }
 
-button{
+.button{
+  background-color: white;
+  color:  #f56a6a;
+  border-color:  #f56a6a;
+  padding: 0.5em 3em 0.5em 3em;
+  border-radius: 3px;
+  border-width: 1px;
 
-    padding-bottom: 6px;
-    padding-top: 6px;
-    background-color: transparent;
-    border-color: #f56a6a solid;
 }
+.button:hover{
+  background-color:  #f56a6a;
+  color: white;
+}
+
 .twocolumn{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -51,4 +66,34 @@ button{
 body{
     margin-left: 3em;
     margin-right: 3em;
+}
+
+
+.titulo{
+  padding: 0.5em 0;
+}
+
+.primera{
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+}
+.linea{
+  height: 5px;
+  width: 330px;
+  background-color: #f56a6a;
+}
+.uno{
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.iconofirst
+{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.iconofirst i {
+    font-size: 70px;
 }
